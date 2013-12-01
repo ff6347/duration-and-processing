@@ -1,9 +1,8 @@
 duration-and-processing
 =======================
 
-I had to fiddle with duration after seeing somebody fork it on github feed
+I had to fiddle with duration after seeing somebody fork it on github feed. See a quick [screenrecord on vimeo](http://vimeo.com/80712056) 
 
-<iframe src="//player.vimeo.com/video/80712056" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>  
 
 1. get the [Duration.app](http://duration.cc) - [Code](https://github.com/YCAMInterlab/Duration)  
 2. get the [procesing osc library](http://www.sojamo.de/libraries/oscP5/)  
@@ -25,3 +24,6 @@ I had to fiddle with duration after seeing somebody fork it on github feed
     
     0. You just DO WHAT THE FUCK YOU WANT TO.
 
+##Music:
+B001 by [Monroeville Music Center](http://monroevillemusiccenter.blogspot.com)  
+under CC Licnese http://creativecommons.org/licenses/by/3.0/
