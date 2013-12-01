@@ -69,7 +69,7 @@ public void recieve_curves(float theA) {
 }
 
 public void recieve_xcurve(float theA) {
-  println("### plug event method. received a message /curves.");
+  println("### plug event method. received a message /xcurve.");
 //  println(" 2 ints received: "+theA);  
     xpos= theA;
 }

@@ -24,6 +24,7 @@ I had to fiddle with duration after seeing somebody fork it on ny github feed. S
     
     0. You just DO WHAT THE FUCK YOU WANT TO.
 
-##Music:
+##Music in Screenrecord:
 B001 by [Monroeville Music Center](http://monroevillemusiccenter.blogspot.com)  
 under CC Licnese http://creativecommons.org/licenses/by/3.0/
+
