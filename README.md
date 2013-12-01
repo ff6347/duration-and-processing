@@ -1,6 +1,7 @@
 duration-and-processing
 =======================
 
+![gif ani](duration_demo.gif)  
 I had to fiddle with duration after seeing somebody fork it on github feed. See a quick [screenrecord on vimeo](http://vimeo.com/80712056) 
 
 
