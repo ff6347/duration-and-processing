@@ -2,7 +2,7 @@ duration-and-processing
 =======================
 
 ![gif ani](duration_demo.gif)  
-I had to fiddle with duration after seeing somebody fork it on github feed. See a quick [screenrecord on vimeo](http://vimeo.com/80712056) 
+I had to fiddle with duration after seeing somebody fork it on ny github feed. See a quick [screenrecord on vimeo](http://vimeo.com/80712056) 
 
 
 1. get the [Duration.app](http://duration.cc) - [Code](https://github.com/YCAMInterlab/Duration)  
