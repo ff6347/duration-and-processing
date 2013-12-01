@@ -1,3 +1,5 @@
+
+
 /**
  * oscP5plug by andreas schlegel
  * example shows how to use the plug service with oscP5.
@@ -13,14 +15,20 @@
 import oscP5.*;
 import netP5.*;
 float pos = 0;
+float xpos = 0;
 boolean switcher = true;
 OscP5 oscP5;
 NetAddress myRemoteLocation;
 color col;
+float [] fft;
+float fftsum;
 
 void setup() {
+  fft = new float[160];
   size(1280,400);
   frameRate(25);
+
+
   /* start oscP5, listening for incoming messages at port 12000 */
   oscP5 = new OscP5(this,12000);
   
@@ -42,9 +50,10 @@ void setup() {
    * the method test(int theA, int theB)
    */
   oscP5.plug(this,"recieve_curves","/curves");
+  oscP5.plug(this,"recieve_xcurve","/xcurve");
   oscP5.plug(this,"recieve_bang","/bangs");
   oscP5.plug(this,"recieve_colors","/colors");
-
+  oscP5.plug(this,"recieve_audio","/audio");
 }
 
 public void recieve_colors(int R, int G, int B) {
@@ -59,18 +68,36 @@ public void recieve_curves(float theA) {
     pos= theA;
 }
 
+public void recieve_xcurve(float theA) {
+  println("### plug event method. received a message /curves.");
+//  println(" 2 ints received: "+theA);  
+    xpos= theA;
+}
+
+
 public void recieve_bang() {
   println("### plug event method. received a message /bangs.");
 //  println(" 2 ints received: "+theA);  
     switcher = !switcher;
 }
 
+public void recieve_audio(float[]  thefft) {
+//  println("### plug event method. received a message /audio. " + thefft);
+//  println(" 2 ints received: "+theA);  
+   
+  fft = thefft;
+
+
+}
+
 void display(){
+  showfft();
+  float xoff =  map(fftsum, 0,160, -100,100);
      if(switcher){
-      ellipse(width/2, (height/2) + pos, 100,100);
+      ellipse(xpos +xoff , (height/2) + pos, 100,100);
     }else{
       rectMode(CENTER);
-      rect(width/2, (height/2) + pos, 100,100);
+      rect(xpos + xoff , (height/2) + pos, 100,100);
     }
     
 
@@ -78,15 +105,24 @@ void display(){
 
 void draw() {
   noStroke();
-  fill(255,20);
+  fill(0,20);
   rectMode(CORNER);
   rect(0,0,width,height);
-  fill(col);
+  fill(col,255);
  
   display();
-
+  fftsum = 0;
 }
 
+void showfft(){
+  for(int i = 0; i < fft.length;i++){
+    float x = 1 + (width / fft.length) * i;
+    float currfft = fft[i] *100;
+    float y = height -  currfft;
+    fftsum += fft[i];
+    rect(x,y,width / fft.length, height - currfft);
+  }
+}
 
 //void mousePressed() {
 //  /* createan osc message with address pattern /test */
@@ -109,8 +145,8 @@ void oscEvent(OscMessage theOscMessage) {
   */  
   if(theOscMessage.isPlugged()==false) {
   /* print the address pattern and the typetag of the received OscMessage */
-  println("### received an osc message.");
-  println("### addrpattern\t"+theOscMessage.addrPattern());
-  println("### typetag\t"+theOscMessage.typetag());
+//  println("### received an osc message.");
+//  println("### addrpattern\t"+theOscMessage.addrPattern());
+//  println("### typetag\t"+theOscMessage.typetag());
   }
 }

@@ -8,18 +8,6 @@
         <value>0.399999976</value>
     </key>
     <key>
-        <time>00:00:00:610</time>
-        <value>0.600000024</value>
-    </key>
-    <key>
-        <time>00:00:00:808</time>
-        <value>0.524999976</value>
-    </key>
-    <key>
-        <time>00:00:00:995</time>
-        <value>0.324999988</value>
-    </key>
-    <key>
         <time>00:00:02:523</time>
         <value>0.649999976</value>
     </key>
@@ -40,11 +28,7 @@
         <value>0.350000024</value>
     </key>
     <key>
-        <time>00:00:04:364</time>
-        <value>0.699999988</value>
-    </key>
-    <key>
-        <time>00:00:04:588</time>
+        <time>00:00:04:589</time>
         <value>0.649999976</value>
     </key>
     <key>
@@ -52,27 +36,43 @@
         <value>0.000000000</value>
     </key>
     <key>
-        <time>00:00:07:909</time>
-        <value>0.600000024</value>
-    </key>
-    <key>
         <time>00:00:08:525</time>
         <value>0.449999988</value>
     </key>
     <key>
-        <time>00:00:08:966</time>
+        <time>00:00:12:368</time>
+        <value>0.125000000</value>
+    </key>
+    <key>
+        <time>00:00:14:093</time>
+        <value>0.225000024</value>
+    </key>
+    <key>
+        <time>00:00:15:994</time>
         <value>0.675000012</value>
     </key>
     <key>
-        <time>00:00:09:276</time>
-        <value>0.475000024</value>
-    </key>
-    <key>
-        <time>00:00:09:513</time>
+        <time>00:00:19:818</time>
         <value>0.524999976</value>
     </key>
     <key>
-        <time>00:00:09:751</time>
-        <value>0.500000000</value>
+        <time>00:00:21:726</time>
+        <value>0.300000012</value>
+    </key>
+    <key>
+        <time>00:00:27:817</time>
+        <value>0.475000024</value>
+    </key>
+    <key>
+        <time>00:00:31:619</time>
+        <value>0.324999988</value>
+    </key>
+    <key>
+        <time>00:00:38:038</time>
+        <value>0.475000024</value>
+    </key>
+    <key>
+        <time>00:00:47:945</time>
+        <value>0.125000000</value>
     </key>
 </keyframes>

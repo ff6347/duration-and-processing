@@ -16,8 +16,8 @@
             <displayName>curves</displayName>
             <sendOSC>1</sendOSC>
             <receiveOSC>0</receiveOSC>
-            <min>-101.000000000</min>
-            <max>101.000000000</max>
+            <min>-381.000000000</min>
+            <max>321.000000000</max>
         </track>
         <track>
             <type>Colors</type>
@@ -28,20 +28,39 @@
             <receiveOSC>0</receiveOSC>
             <palette>GUI/defaultColorPalette.png</palette>
         </track>
+        <track>
+            <type>Audio</type>
+            <xmlFileName></xmlFileName>
+            <trackName>audio</trackName>
+            <displayName>audio</displayName>
+            <sendOSC>1</sendOSC>
+            <receiveOSC>0</receiveOSC>
+            <clip>/Users/fabiantheblind/Documents/Duration/duration-and-processing/HelloWorld/sometesttrack.wav</clip>
+        </track>
+        <track>
+            <type>Curves</type>
+            <xmlFileName>curves_0_.xml</xmlFileName>
+            <trackName>curves_0</trackName>
+            <displayName>xcurve</displayName>
+            <sendOSC>1</sendOSC>
+            <receiveOSC>0</receiveOSC>
+            <min>0.000000000</min>
+            <max>1360.000000000</max>
+        </track>
     </page>
 </tracks>
 <timelineSettings>
-    <duration>00:00:10:000</duration>
-    <playhead>00:00:02:882</playhead>
+    <duration>00:00:56:000</duration>
+    <playhead>00:00:34:223</playhead>
     <inpoint>00:00:00:000</inpoint>
-    <outpoint>00:00:10:000</outpoint>
+    <outpoint>00:00:56:000</outpoint>
     <loop>1</loop>
 </timelineSettings>
 <projectSettings>
     <useBPM>0</useBPM>
     <bpm>120.000000000</bpm>
     <snapToBPM>1</snapToBPM>
-    <snapToKeys>0</snapToKeys>
+    <snapToKeys>1</snapToKeys>
     <oscInEnabled>1</oscInEnabled>
     <oscOutEnabled>1</oscOutEnabled>
     <oscInPort>12346</oscInPort>
